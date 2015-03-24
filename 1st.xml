@@ -1,4 +1,5 @@
 <xml xmlns="http://www.w3.org/1999/xhtml">
+  <block type="movement_forward" id="66" x="-134" y="89"></block>
   <block type="movement_forward" id="10" x="244" y="93">
     <next>
       <block type="robot_delay" id="21" inline="true">
@@ -8,7 +9,64 @@
           </block>
         </value>
         <next>
-          <block type="movement_stop" id="45"></block>
+          <block type="movement_reverse" id="55">
+            <next>
+              <block type="robot_delay" id="77" inline="true">
+                <value name="DELAY">
+                  <block type="math_number" id="84">
+                    <field name="NUM">2000</field>
+                  </block>
+                </value>
+                <next>
+                  <block type="movement_stop" id="45">
+                    <next>
+                      <block type="movement_rightmotor" id="94" inline="true">
+                        <value name="MOVRIGHT">
+                          <block type="math_number" id="101">
+                            <field name="NUM">21</field>
+                          </block>
+                        </value>
+                        <next>
+                          <block type="comment_comment" id="112">
+                            <field name="TEXT">twerk team </field>
+                            <next>
+                              <block type="movement_left" id="122">
+                                <next>
+                                  <block type="movement_right" id="132">
+                                    <next>
+                                      <block type="movement_left" id="142">
+                                        <next>
+                                          <block type="movement_right" id="152">
+                                            <next>
+                                              <block type="movement_forward" id="162">
+                                                <next>
+                                                  <block type="movement_leftmotor" id="172" inline="true">
+                                                    <value name="MOVLEFT">
+                                                      <block type="math_number" id="179">
+                                                        <field name="NUM">103</field>
+                                                      </block>
+                                                    </value>
+                                                  </block>
+                                                </next>
+                                              </block>
+                                            </next>
+                                          </block>
+                                        </next>
+                                      </block>
+                                    </next>
+                                  </block>
+                                </next>
+                              </block>
+                            </next>
+                          </block>
+                        </next>
+                      </block>
+                    </next>
+                  </block>
+                </next>
+              </block>
+            </next>
+          </block>
         </next>
       </block>
     </next>
